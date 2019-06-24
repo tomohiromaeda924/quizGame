@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="frame">
+    <input class="tri" id="trigger" type="checkbox">
+    <h3 class="question" id="question"></h3>
+    <div class="Choice">
+      <ul>
+        <li class="answer" id="answer0" onclick="checkAnswer();" onmouseover="mouseover(this);" onmouseout="mouseout(this);"><span id="an0"></span></li>
+        <li class="answer" id="answer1" onclick="checkAnswer();" onmouseover="mouseover(this);" onmouseout="mouseout(this);"><span id="an1"></span></li>
+        <li class="answer" id="answer2" onclick="checkAnswer();" onmouseover="mouseover(this);" onmouseout="mouseout(this);"><span id="an2"></span></li>
+        <li class="next" id="Next" onclick="nextQuestion();"><span>Next</span></li>
+      </ul>
+      <label id="lab" for="trigger" class="open_button" onclick="nextQuestion();">Show Scor</label>
+    </div>
+    <div class="modalFrame" id="mf">
+      <h3 class="score" id="co"></h3>
+      <p class="replay" id="rp">Replay?</p>
+
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
